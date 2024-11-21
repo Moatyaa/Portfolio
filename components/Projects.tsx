@@ -102,7 +102,7 @@ export default function Projects() {
                                 <div className="introduce">
                                     <h2 className="title !text-[24px] mb-5  text-gray-900 dark:text-gray-300">{item.title}</h2>
                                     <div className="des text-gray-400 leading-6 ">{item.projectDetails}</div>
-                                    <button className="seeMore text-nowrap" onClick={handleSeeMore}>
+                                    <button className="seeMore text-[12px] sm:text-[18px] text-nowrap" onClick={handleSeeMore}>
                                         MORE ABOUT PROJECT... &#8599;
                                     </button>
                                 </div>
