@@ -505,7 +505,8 @@ header nav a{
     }
 
     .carousel .list .item img{
-        width: 40%;
+        width: 45%;
+        height: 16%;
     }
     .carousel.showDetail .list .item:nth-child(2) .detail{
         backdrop-filter: blur(10px);
@@ -553,33 +554,4 @@ header nav a{
 }
 .swiper {
     overflow: visible !important;
-}
-.wrapperr {
-    position: relative;
-    width: 100%;
-    height: 150vh;  /* Set enough height to allow scrolling */
-}
-
-.contentt {
-    position: relative;
-    width: 100%;
-}
-
-.imageContainerr {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999999;
-    perspective: 500px;
-    overflow: hidden;
-}
-
-.imageContainerr img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
 }
