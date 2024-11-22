@@ -6,6 +6,8 @@ import SectionHeader from "@/components/section-header";
 import useSectionInView from "@/hooks/useSectionInView";
 import { motion } from "framer-motion";
 import useScrollY from "@/hooks/useScrollY";
+import {FaLink} from "react-icons/fa";
+import Link from "next/link";
 
 export default function Projects() {
     const { ref } = useSectionInView("Projects");
@@ -84,8 +86,8 @@ export default function Projects() {
             }}
             transition={{ opacity: { duration: 0.5 }, scale: { duration: 0.5 } }} // Smooth transition for opacity & scale
         >
-            <section ref={ref} id="projects" className="!scroll-mt-28  mb-10 sm:mb-24">
-                <div ref={carouselRef} className="carousel relative ">
+            <section ref={ref} id="projects" className="!scroll-mt-28 mb-10 sm:mb-24">
+                <div ref={carouselRef} className="carousel relative">
                     <div
                         id="section-header"
                         className="absolute top-[10%] left-[50%] -translate-x-[50%] sm:left-[5%] sm:translate-x-[0]"
@@ -98,16 +100,25 @@ export default function Projects() {
                         {/* Render carousel items dynamically */}
                         {projectsData.map((item, index: number) => (
                             <div className="item" key={index}>
-                                <Image src={item.imageUrl} alt="Carousel Item" width={400} height={400} />
+                                <div className='img-holder cursor-pointer group'>
+                                    <Image src={item.imageUrl}  alt="Carousel Item" className='w-[100%] h-[100%]' width={400} height={400}/>
+                                    {item.projectUrl ? <Link target='_blank' href={item.projectUrl}><div className='absolute opacity-0 group-hover:opacity-100  transition flex justify-center items-center text-white w-[100%] h-[100%] top-0 left-0 bg-[rgba(0,0,0,0.2)]'><FaLink className='group-hover:scale-105'/></div></Link>: ''}
+                                </div>
                                 <div className="introduce">
                                     <h2 className="title !text-[24px] mb-5  text-gray-900 dark:text-gray-300">{item.title}</h2>
                                     <div className="des text-gray-400 leading-6 ">{item.projectDetails}</div>
-                                    <button className="seeMore text-[12px] sm:text-[18px] text-nowrap" onClick={handleSeeMore}>
+                                    <button className="seeMore text-[12px] sm:text-[18px] text-nowrap"
+                                            onClick={handleSeeMore}>
                                         MORE ABOUT PROJECT... &#8599;
                                     </button>
                                 </div>
                                 <div className="detail">
-                                    <div className="title text-gray-900 dark:text-gray-300">{item.title}</div>
+                                    <div>
+                                        <div className="title text-gray-900 dark:text-gray-300">
+                                            {item.title}
+                                        </div>
+
+                                    </div>
                                     <div className="des text-gray-500">{item.description}</div>
                                     <div className="specifications !flex-wrap sm:flex-nowrap">
                                         {item.tags.map((spec, specIndex) => (
