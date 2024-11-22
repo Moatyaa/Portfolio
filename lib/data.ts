@@ -152,6 +152,7 @@ export const projectsData = [
         projectDetails: "\n" +
             "I improved booking and room management, enabling staff to handle reservations and customer requests easily. I also created detailed customer profiles for personalized service and developed a user-friendly Admin Dashboard for efficient operations management.",
         imageUrl: reservation,
+        projectUrl: ''
     },
     {
         title: "Fresh Cart E-Commerce",
@@ -160,6 +161,7 @@ export const projectsData = [
         tags: ["React" ,"Context" ,"Bootstrap", "ant Design"],
         projectDetails: "I developed \"Fresh Cart,\" a fully functional e-commerce platform using React, focusing on dynamic UIs, product listings, and features like shopping carts and payment systems for a smooth, engaging user experience.",
         imageUrl: freshCart,
+        projectUrl: 'https://freshmart1.vercel.app/'
     },
     {
         title: "Transaction Dashboard",
@@ -168,6 +170,7 @@ export const projectsData = [
         tags: ["React" , "JavaScript" ,"Css", "Chart.js"],
         projectDetails: "a user-friendly Admin Dashboard for the Hotels Reservation Management System, streamlining hotel operations and enabling efficient management of bookings, room assignments, and customer requests.",
         imageUrl: dashboard,
+        projectUrl: ''
     },{
         title: "Explore Egypt",
         description:
@@ -175,6 +178,7 @@ export const projectsData = [
         tags: ["Html" , "Css" ,"Js", "Responsive"],
         projectDetails: "This single-page website promotes Egypt as a travel destination, showcasing attractions like Khan el-Khalili, Luxor hot air balloons, and the pyramids. It features responsive design, interactive navigation, and social media links for an informative guide to visiting Egypt.",
         imageUrl: egypt,
+        projectUrl: ''
     },
     {
         title: "Mealify",
@@ -183,6 +187,7 @@ export const projectsData = [
         tags: ["Html" ,"Css" , "JavaScript" ,"Bootstrap", "Responsive"],
         projectDetails: "a dynamic restaurant landing page that highlights professional chefs, a meal gallery, and easy table booking. With a clean, modern design and dark mode functionality, it offers a seamless, engaging experience for customers to explore and connect with the restaurant.",
         imageUrl: meal,
+        projectUrl: 'https://meallify.vercel.app/'
     },
     {
         title: "Sign In-Up",
@@ -191,6 +196,7 @@ export const projectsData = [
         tags: ["Html" ,"Css" , "JavaScript" , "Responsive"],
         projectDetails: "I created a user-friendly sign-up and sign-in page for \"CaseFair\" with smooth animations that toggle between forms. Users can register via social media or email, with dynamic input visibility and text updates for a seamless experience.",
         imageUrl: signInUp,
+        projectUrl: 'https://sign-in-up1.vercel.app/'
     },
     {
         title: "Family Bakery Website",
@@ -199,20 +205,23 @@ export const projectsData = [
         projectDetails: "This project, part of my training at Route Academy, involved developing a responsive website for a \"Family Bakery\" . It enhanced my front-end design skills and user experience proficiency.",
         tags: ["Html" ,"Css" , "Responsive"],
         imageUrl: familyBakery,
+        projectUrl: 'https://family-bakery1.vercel.app/'
     }, {
         title: "Portfolio",
         description:
             "This project was developed as part of my training at Route Academy. The objective was to create a professional portfolio website create a responsive, visually appealing, and user-friendly website. Key features included interactive navigation,The project allowed me to strengthen my skills in HTML, CSS, JavaScript, and web design principles and provided valuable hands-on experience in building a complete website structure, which aligns with real-world development practices."    ,
         tags: ["Html" ,"Css" , "javaScript" , "Responsive", "Bootstrap"],
         projectDetails: 'Developed during my training at Route Academy, this project involved creating a responsive, user-friendly portfolio website with interactive navigation. It strengthened my skills in HTML, CSS, JavaScript, and web design principles, providing hands-on experience in building a complete website structure.',
-        imageUrl: portfolio
+        imageUrl: portfolio,
+        projectUrl: 'https://fokir-two.vercel.app/'
     }, {
         title: "Portfolio",
         description:
             "structure of a personal website, That the layout uses Bootstrap for responsiveness and includes icons from Font Awesome. It also integrates custom CSS styles and animations, with sections designed to showcase the individual's skills, work, and contact information.\n",
         tags: ["Html" ,"Css" , "javaScript" , "Responsive", "Bootstrap"],
         projectDetails: 'a personal website with a responsive layout using Bootstrap and Font Awesome icons. The site includes custom CSS styles and animations, featuring sections to display skills, work, and contact information.',
-        imageUrl: portfolio2
+        imageUrl: portfolio2,
+        projectUrl: 'https://danfolio-swart.vercel.app/'
     },
     {
         title: "MealDB",
@@ -220,7 +229,8 @@ export const projectsData = [
             "This JavaScript-based web application allows users to explore meals from an API, search for meals by name or first letter, and view detailed information about meals, including ingredients, instructions, and more. It features a side menu for easy navigation between sections like categories, areas, and ingredients. The interface includes a dynamic loading screen, search functionalities, and user validation for a contact form. Meals can be filtered by categories, areas, or ingredients, providing a rich and interactive browsing experience.."    ,
         tags: ["Html" ,"Css" , "javaScript" , "jQuery","Responsive"],
         projectDetails: "JavaScript web app enables users to discover meals from an API, search by name or letter, and view detailed information. It includes a side menu for easy navigation, dynamic loading, and search features. Meals can be filtered by categories, areas, or ingredients for a more interactive experience.",
-        imageUrl: Meals
+        imageUrl: Meals,
+        projectUrl: "https://meal-db1.vercel.app/"
     }
 ] as const;
 
