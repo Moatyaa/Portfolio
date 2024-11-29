@@ -102,7 +102,6 @@ export default function Projects() {
                             <div className="item" key={index}>
                                 <div className='img-holder cursor-pointer group'>
                                     <Image src={item.imageUrl}  alt="Carousel Item" className='w-[100%] h-[100%]' width={400} height={400}/>
-                                    {item.projectUrl ? <Link target='_blank' href={item.projectUrl}><div className='absolute opacity-0 group-hover:opacity-100  transition flex justify-center items-center text-white w-[100%] h-[100%] top-0 left-0 bg-[rgba(0,0,0,0.2)]'><FaLink className='group-hover:scale-105'/></div></Link>: ''}
                                 </div>
                                 <div className="introduce">
                                     <h2 className="title !text-[24px] mb-5  text-gray-900 dark:text-gray-300">{item.title}</h2>
